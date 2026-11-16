@@ -1,0 +1,22 @@
+# Gradle / build
+.gradle/
+build/
+app/build/
+local.properties
+
+# APK çıktıları (Releases sayfasına yüklenir)
+dist/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# İmzalama anahtarları
+*.jks
+*.keystore

@@ -1,0 +1,31 @@
+plugins { id 'com.android.application' }
+
+def appVersion = rootProject.file('VERSION').text.trim()
+
+android {
+    namespace 'com.xmior.spoofdpiplus'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'com.xmior.spoofdpiplus'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName appVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            // Yerel kullanım için debug anahtarıyla imzalanır; APK doğrudan yüklenebilir.
+            signingConfig signingConfigs.debug
+        }
+    }
+    lint { checkReleaseBuilds false }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    applicationVariants.all { v ->
+        v.outputs.all { outputFileName = "SpoofDPIPlus-${appVersion}-Android.apk" }
+    }
+}

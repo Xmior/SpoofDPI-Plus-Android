@@ -1,0 +1,11 @@
+<resources>
+    <color name="bg">#FFF3F4F7</color>
+    <color name="card">#FFFFFFFF</color>
+    <color name="text">#FF15171C</color>
+    <color name="sub">#FF6B7280</color>
+    <color name="accent">#FF2F6BFF</color>
+    <color name="ok">#FF22A55A</color>
+    <color name="bad">#FFE5484D</color>
+    <color name="warn">#FFE8A317</color>
+    <color name="btn2">#FFE8EBF2</color>
+</resources>
